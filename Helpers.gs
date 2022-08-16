@@ -6,7 +6,7 @@
  * @param {?integer} The manually set frequency that the user intends to set.
  * @return {integer} The closest valid value to the intended frequency setting. Defaulting to 15 if no valid input is provided.
  */
-function getValidTriggerFrequency(origFrequency) {
+ function getValidTriggerFrequency(origFrequency) {
   if (!origFrequency > 0) {
     Logger.log("No valid frequency specified. Defaulting to 15 minutes.");
     return 15;
@@ -264,6 +264,7 @@ function createEvent(event, calendarTz){
     return;
   }
 
+  Logger.log("Syncing Event " + event.getFirstPropertyValue('summary').toString());
   var newEvent =
     callWithBackoff(function() {
         return Calendar.newEvent();

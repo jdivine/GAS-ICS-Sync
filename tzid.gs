@@ -601,6 +601,7 @@ tzidreplace = {
 "Pacific Standard Time (Mexico)": "America/Tijuana",
 "UTC-08": "Pacific/Pitcairn",
 "Pacific Standard Time": "America/Los_Angeles",
+"Pacific Standard Time 1": "America/Los_Angeles",
 "US Mountain Standard Time": "America/Phoenix",
 "Mountain Standard Time (Mexico)": "America/Chihuahua",
 "Mountain Standard Time": "America/Denver",
